@@ -1,0 +1,121 @@
+/*===Styling===*/
+      body{
+         margin: 25vw;
+         background: lightblue;
+      }
+
+      input {
+         padding: 1vw;
+         margin: 1.3%;
+         cursor: pointer;
+         background: azure;
+         font: 23px black monospace;
+         font-weight: bolder;
+         border:  none;
+         box-shadow: 4px 6px 7px darkgray;
+      }
+
+      input[id="op"] {
+         background: gainsboro;   
+      }
+
+      input[value="="]{
+         background: lawngreen;
+      }
+
+      #result{
+         width: 41vw;
+         padding: 3%;
+         background: black;
+         color: white;
+         letter-spacing: 7px;
+         font: 23px cursive ;
+         font-weight: bolder;
+         box-shadow: 17px 16px 19px darkgray;
+      }
+
+      .next {
+         padding: 3%;
+         background: antiquewhite;
+         font-weight: bolder;
+      }
+      .next a{
+         margin-left: 0;
+         font: 14px crimson monospace;
+         text-decoration: none;
+         font-weight: bolder;
+      }
+
+      /*===Hover effect===*/
+      input[type="button"]:hover{
+         background: deepskyblue;
+         border-top-left-radius: 33px;
+         border-bottom-right-radius: 25px;
+         box-shadow: none;
+         color: white;
+      }
+
+      input[id="op"]:hover{
+         background: darkviolet;
+
+      }
+      /*===Grids===*/
+      
+      
+      .result{grid-area: result;}
+      .key-7{grid-area: key7;}
+      .key-8{grid-area: key8;}
+      .key-9{grid-area: key9;}
+      .key-4{grid-area: key4;}
+      .key-5{grid-area: key5;}
+      .key-6{grid-area: key6;}
+      .key-1{grid-area: key1;}
+      .key-2{grid-area: key2;}
+      .key-3{grid-area: key3;}
+      .key-0{grid-area: key0;}
+      .key-00{grid-area: key00;}
+      .key-decimal{grid-area: key-decimal;}
+      .div{grid-area: div;}
+      .mult{grid-area: mult;}
+      .sub{grid-area: subn;}
+      .add{grid-area: addn;}
+      .ans{grid-area: ans;}
+      .Clear{grid-area: clear;background: deeppink;}
+      .back{grid-area: back;}
+      .power{grid-area: pow;}
+      .squareroot{grid-area: squareroot;}
+      .cuberoot{grid-area: cuberoot;}
+      .cube{grid-area: cube;}
+      
+      
+      .calc>div{
+         display: grid;
+         grid-template-areas: 
+            'result result result next'
+            'squareroot pow cuberoot cube'
+            'clear back key00  div'
+            'key7  key8  key9 mult'
+            'key4  key5  key6 subn'
+            'key1  key2  key3 addn'
+            'key0  key-decimal ans ans';
+
+      }
+      
+      @media screen and (max-width: 400px){
+         
+
+         .calc>div{
+         display: grid;
+         grid-template-areas: 
+            'result result result result'
+            'next next next next'
+            'squareroot pow cuberoot cube'
+            'clear back key00  div'
+            'key7  key8  key9 mult'
+            'key4  key5  key6 subn'
+            'key1  key2  key3 addn'
+            'key0  key-decimal ans ans';
+
+      }
+
+      }

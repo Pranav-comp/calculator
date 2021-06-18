@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Virtual Calc</title>
+   <link rel="stylesheet" type="text/css" href="calc_style.css">
+   <script type="text/javascript" src="calc.js"></script>
+
+</head>
+<body>
+   <div class="calc" align="center">      
+      <input type="text" class="result" placeholder="0" id="result"></input>
+      <button type="button" class="next"><a href="Scientificalc.html">></a></button>
+      <br>
+      <div>
+        <!--Number keys-->
+         <input type="button" class="key-7" value="7" onclick="dis('7')"/>
+         <input type="button" class="key-8" value="8" onclick="dis('8')"></input>
+         <input type="button" class="key-9" value="9" onclick="dis('9')"></input>
+         <input type="button" class="key-4" value="4" onclick="dis('4')"></input>
+         <input type="button" class="key-5" value="5" onclick="dis('5')"></input>
+         <input type="button" class="key-6" value="6" onclick="dis('6')"></input>
+         <input type="button" class="key-1" value="1" onclick="dis('1')"></input>
+         <input type="button" class="key-2" value="2" onclick="dis('2')"></input>
+         <input type="button" class="key-3" value="3" onclick="dis('3')"></input>
+         <input type="button" class="key-0" value="0" onclick="dis('0')"></input>
+         <input type="button" class="key-00" value="00" onclick="dis('00')"></input>
+         <input type="button" class="key-decimal" value="." onclick="dis('.')"></input>
+         <!--operational keys-->
+         <input type="button" class="div" id="op" value="/" onclick="dis('/')"></input>
+         <input type="button" class="mult" id="op" value="*" onclick="dis('*')"></input>
+         <input type="button" class="sub" id="op" value="-" onclick="dis('-')"></input>
+         <input type="button" class="add" id="op" value="+" onclick="dis('+')"></input>
+         <input type="button" class="ans" value="=" onclick="result()"></input>
+         <input type="button" class="Clear" value="C" onclick="clr()"></input>
+         <input type="button" class="back" value="&#8592" onclick="backspc()"></input>
+
+         <!--Extra functions-->
+         <input type="button" class="power" id="op" value="&#13217" onclick="square()" />
+         <input type="button" class="squareroot" id="op" value="&#8730" onclick="squareroot()"/>
+         <input type="button" class="cuberoot" id="op" value="&#8731" onclick="cuberoot()"/>
+         <input type="button" class="cube" id="op" value="&#13221" onclick="cube()"/>
+      </div>
+   </div>
+
+</body>
+
+</html>
