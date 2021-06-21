@@ -1,0 +1,128 @@
+/*===Styling===*/
+      body{
+         margin: 25vw;
+         background: lightblue;
+      }
+
+      .footer{
+         bottom: 10px;
+         margin: 1%;
+         background: azure;
+         font-size: 26px;
+         color: black;
+         font-weight: bolder;
+      }
+
+      mark{
+         background: gold;
+      }
+
+      input {
+         padding: 1vw;
+         margin: 1.4%;
+         cursor: pointer;
+         background: azure;
+         font: 23px black monospace;
+         font-weight: bolder;
+         border:  none;
+         box-shadow: 4px 4px 7px darkgray;
+      }
+
+      input[id="op"] {
+         background: gainsboro;
+         border-radius: 5px;   
+      }
+
+      input[value="="]{
+         background: lawngreen;
+      }
+
+      #result{
+         width: 45vw;
+         padding: 3%;
+         background: black;
+         color: white;
+         height: 10vw;
+         letter-spacing: 7px;
+         font: 27px cursive ;
+         font-weight: bolder;
+         border-radius: 8px;
+         box-shadow: 17px 16px 19px darkgray;
+      }
+
+      
+
+      /*===Hover effect===*/
+      input[type="button"]:hover{
+         background: deepskyblue;
+         border-top-left-radius: 33px;
+         border-bottom-right-radius: 25px;
+         box-shadow: none;
+         color: white;
+      }
+
+      input[id="op"]:hover{
+         background: darkviolet;
+
+      }
+      /*===Grids===*/
+      
+      
+      .result{grid-area: result;}
+      .key-7{grid-area: key7;}
+      .key-8{grid-area: key8;}
+      .key-9{grid-area: key9;}
+      .key-4{grid-area: key4;}
+      .key-5{grid-area: key5;}
+      .key-6{grid-area: key6;}
+      .key-1{grid-area: key1;}
+      .key-2{grid-area: key2;}
+      .key-3{grid-area: key3;}
+      .key-0{grid-area: key0;}
+      .key-00{grid-area: key00;}
+      .key-decimal{grid-area: key-decimal;}
+      .div{grid-area: div;}
+      .mult{grid-area: mult;}
+      .sub{grid-area: subn;}
+      .add{grid-area: addn;}
+      .ans{grid-area: ans;}
+      .Clear{grid-area: clear;background: deeppink;}
+      .back{grid-area: back;}
+      .power{grid-area: pow;}
+      .squareroot{grid-area: squareroot;}
+      .cuberoot{grid-area: cuberoot;}
+      .cube{grid-area: cube;}
+      .inversexpo{grid-area: inverse;}
+      .expo{grid-area: expo;}
+      .log{grid-area: log;}
+      .ln{grid-area: ln;}
+      .sin{grid-area: sin;}
+      .cos{grid-area: cos;}
+      .tan{grid-area: tann;}
+      .openp{grid-area: openp;}
+      .closep{grid-area: closep;}
+      
+      .calc>div{
+         display: grid;
+         grid-template-areas: 
+            'result result result result result result'
+            'squareroot pow cuberoot cube expo inverse'
+            'clear back key00  div openp closep'
+            'key7  key8  key9 mult sin sin'
+            'key4  key5  key6 subn cos cos'
+            'key1  key2  key3 addn tann tann'
+            'key0  key-decimal ans ans log ln ';
+
+      }
+      
+      @media screen and (max-width: 400px){
+         
+         input{
+            font-size: 14px;
+         }
+
+      #result{
+         font-size: 14px;
+      }
+
+      }
